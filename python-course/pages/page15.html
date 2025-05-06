@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 14 — ООП в Python</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Урок 14: ООП в Python</h1>
+    </header>
+
+    <section>
+        <h2>Что такое ООП?</h2>
+        <p>Объектно-ориентированное программирование (ООП) — это парадигма программирования, основанная на концепции объектов, которые содержат данные и методы для их обработки.</p>
+        <p>Основные принципы ООП: инкапсуляция, наследование и полиморфизм.</p>
+
+        <h2>Создание классов:</h2>
+        <pre><code>class Person:
+    def _init_(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        print(f"Привет, меня зовут {self.name} и мне {self.age} лет!")
+
+# Создаем объект
+person = Person("Анна", 25)
+person.greet()</code></pre>
+
+        <h2>Основные элементы ООП:</h2>
+        <ul>
+            <li><code>class</code> — создаем класс</li>
+            <li><code>_init_()</code> — конструктор класса (метод инициализации)</li>
+            <li><code>self</code> — ссылка на текущий объект</li>
+            <li><code>method</code> — методы, которые определяются внутри класса</li>
+        </ul>
+
+        <h2>Наследование в Python:</h2>
+        <pre><code>class Student(Person):
+    def _init_(self, name, age, school):
+        super()._init_(name, age)
+        self.school = school
+
+    def greet(self):
+        print(f"Привет, я {self.name}, мне {self.age} лет, учусь в {self.school}.")
+
+student = Student("Иван", 18, "Школа №1")
+student.greet()</code></pre>
+
+        <h2>Полиморфизм:</h2>
+        <p>Полиморфизм позволяет использовать методы с одинаковыми именами, но разным поведением в разных классах.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Python Course</p>
+
+
+</html>
+<br>
+<nav>
+            <ul>
+                
+                <li><a href="page1.html">Главная</a></li>
+                <li><a href="page14.html">Урок 13</a></li>
+                <li><a href="page16.html">Урок 15</a></li>
+            </ul>
+        </nav>
+    </header>

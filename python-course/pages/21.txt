@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 20 — Работа с библиотеками и пакетами</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Урок 20: Работа с библиотеками и пакетами в Python</h1>
+    </header>
+
+    <section>
+        <h2>Что такое библиотеки и пакеты?</h2>
+        <p>Библиотеки и пакеты — это наборы готовых модулей, которые позволяют ускорить разработку. Библиотеки содержат функции и классы для решения различных задач, а пакеты — это коллекции таких библиотек.</p>
+
+        <h2>Как установить библиотеку?</h2>
+        <p>Для установки сторонних библиотек используется менеджер пакетов <code>pip</code>. Например, для установки библиотеки <code>requests</code> (для работы с HTTP-запросами) выполните команду:</p>
+        <pre><code>pip install requests</code></pre>
+
+        <h2>Как использовать библиотеку?</h2>
+        <p>После установки библиотеки, ее можно импортировать в программу с помощью команды <code>import</code>:</p>
+        <pre><code>import requests
+
+response = requests.get("https://api.github.com")
+print(response.status_code)  # Код состояния HTTP-ответа</code></pre>
+
+        <h2>Создание собственного пакета:</h2>
+        <p>Чтобы создать собственный пакет, нужно организовать структуру каталогов с файлами Python. Например:</p>
+        <pre><code>my_package/
+    _init_.py
+    module1.py
+    module2.py</code></pre>
+
+        <h2>Установка собственного пакета:</h2>
+        <p>Для установки собственного пакета можно использовать команду <code>pip install</code>, указав путь к каталогу с файлом <code>setup.py</code>.</p>
+
+        <h2>Основные библиотеки Python:</h2>
+        <ul>
+            <li><strong>requests</strong> — работа с HTTP-запросами</li>
+            <li><strong>numpy</strong> — работа с многомерными массивами и математическими функциями</li>
+            <li><strong>pandas</strong> — работа с данными и таблицами</li>
+            <li><strong>matplotlib</strong> — построение графиков и диаграмм</li>
+            <li><strong>flask</strong> — создание веб-приложений</li>
+        </ul>
+
+        <h2>Пример использования библиотеки <code>requests</code> для отправки POST-запроса:</h2>
+        <pre><code>import requests
+
+data = {'username': 'test', 'password': '1234'}
+response = requests.post("https://httpbin.org/post", data=data)
+print(response.json())  # Ответ в формате JSON</code></pre>
+
+        <h2>Пример использования <code>pandas</code> для работы с таблицами:</h2>
+        <pre><code>import pandas as pd
+
+data = {'Имя': ['Аня', 'Петя'], 'Возраст': [25, 30]}
+df = pd.DataFrame(data)
+print(df)</code></pre>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Python Course</p>
+
+
+<br>
+<nav>
+            <ul>
+                
+                <li><a href="page1.html">Главная</a></li>
+                <li><a href="page20.html">Урок 19</a></li>
+                <li><a href="page22.html">Урок 21</a></li>
+            </ul>
+        </nav>
+    </header>

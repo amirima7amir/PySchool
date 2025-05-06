@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 12 — Регулярные выражения в Python</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Урок 12: Регулярные выражения в Python</h1>
+    </header>
+
+    <section>
+        <h2>Что такое регулярные выражения?</h2>
+        <p>Регулярные выражения (или regex) — это строки, которые задают шаблон для поиска в тексте. Они позволяют находить, заменять или проверять строки по определенным правилам.</p>
+        <pre><code>import re
+
+pattern = r"\d+"  # Шаблон для поиска чисел
+text = "Сегодня 25 апреля, температура 18 градусов."
+
+matches = re.findall(pattern, text)
+print(matches)  # ['25', '18']</code></pre>
+
+        <h2>Основные функции модуля <code>re</code>:</h2>
+        <ul>
+            <li><code>re.findall()</code> — находит все вхождения шаблона в строке</li>
+            <li><code>re.search()</code> — находит первое вхождение шаблона</li>
+            <li><code>re.sub()</code> — заменяет вхождения шаблона на новый текст</li>
+            <li><code>re.match()</code> — проверяет, соответствует ли начало строки шаблону</li>
+        </ul>
+
+        <h3>Пример использования:</h3>
+        <pre><code>import re
+
+text = "Email: example@example.com"
+pattern = r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b"
+match = re.search(pattern, text)
+if match:
+    print("Найден email:", match.group())</code></pre>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Python Course</p>
+
+
+<br>
+<nav>
+            <ul>
+                
+                <li><a href="page1.html">Главная</a></li>
+                <li><a href="page12.html">Урок 11</a></li>
+                <li><a href="page14.html">Урок 13</a></li>
+                
+            </ul>
+        </nav>
+    </header>

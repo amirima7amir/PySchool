@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обучение Python</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в курс по Python!</h1>
+        <nav>
+            <ul>
+                <li><a href="page1.html">Введение в Python</a></li>
+                <li><a href="page2.html">Установка Python и настройка среды</a></li>
+                <!-- добавьте ссылки на остальные страницы по мере их создания -->
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Начало обучения</h2>
+        <p>Перейдите на страницы курса, чтобы начать изучение Python!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Обучение Python</p>
+    </footer>
+</body>
+</html>

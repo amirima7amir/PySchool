@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 13 — Работа с библиотеками и модулями</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Урок 13: Работа с библиотеками и модулями в Python</h1>
+    </header>
+
+    <section>
+        <h2>Что такое библиотеки и модули?</h2>
+        <p>Модули — это файлы с кодом, содержащие функции, переменные и классы. Библиотеки — это наборы связанных модулей, которые помогают решать специфические задачи. В Python можно использовать как стандартные библиотеки, так и сторонние.</p>
+
+        <h2>Импортирование модулей:</h2>
+        <ul>
+            <li><code>import</code> — для импорта всего модуля</li>
+            <li><code>from ... import</code> — для импорта конкретных элементов из модуля</li>
+            <li><code>as</code> — для создания псевдонима для модуля</li>
+        </ul>
+
+        <h3>Пример импорта стандартных библиотек:</h3>
+        <pre><code>import math
+print(math.sqrt(16))  # 4.0</code></pre>
+
+        <h3>Пример использования сторонней библиотеки (например, <code>requests</code> для работы с HTTP):</h3>
+        <pre><code>import requests
+
+response = requests.get("https://api.github.com")
+print(response.json())</code></pre>
+
+        <h2>Как установить сторонние библиотеки:</h2>
+        <p>Для установки сторонних библиотек используется <code>pip</code> — менеджер пакетов Python. Например, чтобы установить библиотеку <code>requests</code>, используйте команду:</p>
+        <pre><code>pip install requests</code></pre>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Python Course</p>
+
+
+
+
+
+   
+<br>
+<nav>
+            <ul>
+                
+                <li><a href="page1.html">Главная</a></li>
+                <li><a href="page13.html">Урок 12</a></li>
+                <li><a href="page15.html">Урок 14</a></li>
+            </ul>
+        </nav>
+    </header>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 9 — Множества в Python</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Урок 9: Множества в Python</h1>
+    </header>
+
+    <section>
+        <h2>Что такое множества?</h2>
+        <p>Множества в Python — это неупорядоченные коллекции уникальных элементов. Множества не могут содержать дублирующиеся значения.</p>
+        <pre><code>my_set = {1, 2, 3, 4}</code></pre>
+
+        <h2>Основные операции с множествами:</h2>
+        <ul>
+            <li><code>add()</code> — добавляет элемент в множество</li>
+            <li><code>remove()</code> — удаляет элемент из множества</li>
+            <li><code>union()</code> — объединяет два множества</li>
+            <li><code>intersection()</code> — находит пересечение двух множеств</li>
+        </ul>
+
+        <h3>Пример:</h3>
+        <pre><code>my_set = {1, 2, 3}
+my_set.add(4)
+print(my_set)  # {1, 2, 3, 4}</code></pre>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Python Course</p>
+
+
+<br>
+<nav>
+            <ul>
+                
+                <li><a href="page1.html">Главная</a></li>
+                <li><a href="page9.html">Урок 8</a></li>
+                <li><a href="page11.html">Урок 10</a></li>
+                
+            </ul>
+        </nav>
+    </header>

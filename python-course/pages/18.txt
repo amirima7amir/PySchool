@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 17 — Обработка ошибок и исключений</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Урок 17: Обработка ошибок и исключений</h1>
+    </header>
+
+    <section>
+        <h2>Что такое исключения?</h2>
+        <p>Исключения — это ошибки, которые происходят во время выполнения программы. В Python, когда возникает ошибка, программа выбрасывает исключение. Мы можем перехватывать и обрабатывать эти исключения с помощью конструкции <code>try/except</code>.</p>
+
+        <h2>Основная конструкция для обработки ошибок:</h2>
+        <pre><code>try:
+    x = 1 / 0  # Деление на ноль
+except ZeroDivisionError:
+    print("Ошибка: деление на ноль!")</code></pre>
+
+        <h2>Как работает конструкция <code>try/except</code>?</h2>
+        <p>Когда в блоке <code>try</code> происходит ошибка, Python пропускает оставшийся код внутри блока <code>try</code> и выполняет блок <code>except</code>, если ошибка была соответствующая.</p>
+
+        <h2>Обработка нескольких исключений:</h2>
+        <pre><code>try:
+    x = int(input("Введите число: "))
+    result = 10 / x
+except ZeroDivisionError:
+    print("Ошибка: деление на ноль!")
+except ValueError:
+    print("Ошибка: введено не число!")
+except Exception as e:
+    print(f"Произошла ошибка: {e}")</code></pre>
+
+        <h2>Блок <code>else</code>:</h2>
+        <p>Блок <code>else</code> выполняется, если в блоке <code>try</code> не было ошибок.</p>
+        <pre><code>try:
+    x = 10 / 2
+except ZeroDivisionError:
+    print("Ошибка!")
+else:
+    print("Выполнение прошло успешно!")</code></pre>
+
+        <h2>Блок <code>finally</code>:</h2>
+        <p>Блок <code>finally</code> выполняется в любом случае, независимо от того, была ли ошибка или нет.</p>
+        <pre><code>try:
+    x = 10 / 2
+except ZeroDivisionError:
+    print("Ошибка!")
+finally:
+    print("Этот блок выполняется всегда!")</code></pre>
+
+        <h2>Поднятие исключений:</h2>
+        <p>Вы можете создать собственные исключения с помощью <code>raise</code>.</p>
+        <pre><code>def check_positive(num):
+    if num < 0:
+        raise ValueError("Число должно быть положительным!")
+    return num
+
+try:
+    check_positive(-5)
+except ValueError as e:
+    print(e)</code></pre>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Python Course</p>
+
+
+<br>
+<nav>
+            <ul>
+                
+                <li><a href="page1.html">Главная</a></li>
+                <li><a href="page17.html">Урок 16</a></li>
+                <li><a href="page19.html">Урок 18</a></li>
+            </ul>
+        </nav>
+    </header>

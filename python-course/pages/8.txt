@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 7 — Строки и методы строк</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Урок 7: Строки и методы строк</h1>
+    </header>
+
+    <section>
+        <h2>Что такое строки?</h2>
+        <p>Строки — это последовательности символов. В Python строки являются неизменяемыми объектами.</p>
+        <pre><code>greeting = "Привет, мир!"</code></pre>
+
+        <h2>Основные методы строк:</h2>
+        <ul>
+            <li><code>upper()</code> — переводит строку в верхний регистр</li>
+            <li><code>lower()</code> — переводит строку в нижний регистр</li>
+            <li><code>split()</code> — разделяет строку на части</li>
+            <li><code>replace()</code> — заменяет часть строки</li>
+        </ul>
+
+        <h3>Пример:</h3>
+        <pre><code>text = "Привет, мир!"
+print(text.upper())  # "ПРИВЕТ, МИР!"</code></pre>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Python Course</p>
+
+
+<br>
+<nav>
+            <ul>
+                
+                <li><a href="page1.html">Главная</a></li>
+                <li><a href="page7.html">Урок 6</a></li>
+                <li><a href="page9.html">Урок 8</a></li>
+                
+            </ul>
+        </nav>
+    </header>

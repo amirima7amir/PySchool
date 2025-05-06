@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 11 — Работа с файлами</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Урок 11: Работа с файлами</h1>
+    </header>
+
+    <section>
+        <h2>Что такое файлы?</h2>
+        <p>Файлы позволяют сохранять данные на диске. В Python можно работать с файлами, используя стандартные функции.</p>
+        <pre><code>with open("example.txt", "w") as file:
+    file.write("Привет, мир!")</code></pre>
+
+        <h2>Режимы работы с файлами:</h2>
+        <ul>
+            <li><code>"r"</code> — открытие файла для чтения (по умолчанию)</li>
+            <li><code>"w"</code> — открытие файла для записи (создается новый файл)</li>
+            <li><code>"a"</code> — добавление данных в конец файла</li>
+            <li><code>"rb"</code> — открытие файла для чтения в бинарном режиме</li>
+        </ul>
+
+        <h3>Пример:</h3>
+        <pre><code>with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)</code></pre>
+
+        <h2>Работа с ошибками при работе с файлами:</h2>
+        <ul>
+            <li>Если файл не существует, будет выброшено исключение <code>FileNotFoundError</code></li>
+            <li>Использование конструкции <code>try/except</code> помогает обработать такие ошибки.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Python Course</p>
+
+
+<br>
+<nav>
+            <ul>
+                
+                <li><a href="page1.html">Главная</a></li>
+                <li><a href="page11.html">Урок 10</a></li>
+                <li><a href="page13.html">Урок 12</a></li>
+                
+            </ul>
+        </nav>
+    </header>

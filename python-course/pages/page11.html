@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 10 — Обработка ошибок и исключений</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Урок 10: Обработка ошибок и исключений</h1>
+    </header>
+
+    <section>
+        <h2>Что такое исключения?</h2>
+        <p>Исключения — это ошибки, которые могут возникнуть при выполнении программы. Обработка ошибок позволяет предотвратить её остановку и сделать код более стабильным.</p>
+        <pre><code>try:
+    x = 1 / 0
+except ZeroDivisionError:
+    print("Ошибка деления на ноль!")</code></pre>
+
+        <h2>Основные блоки обработки ошибок:</h2>
+        <ul>
+            <li><code>try</code> — блок, в котором выполняется код, который может вызвать ошибку</li>
+            <li><code>except</code> — блок, который перехватывает ошибки и позволяет обработать их</li>
+            <li><code>else</code> — блок, который выполняется, если ошибок не произошло</li>
+            <li><code>finally</code> — блок, который выполняется в любом случае, независимо от ошибок</li>
+        </ul>
+
+        <h3>Пример:</h3>
+        <pre><code>try:
+    x = int(input("Введите число: "))
+except ValueError:
+    print("Это не число!")
+else:
+    print(f"Вы ввели число {x}.")</code></pre>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Python Course</p>
+
+
+<br>
+<nav>
+            <ul>
+                
+                <li><a href="page1.html">Главная</a></li>
+                <li><a href="page10.html">Урок 9</a></li>
+                <li><a href="page12.html">Урок 11</a></li>
+                
+            </ul>
+        </nav>
+    </header>

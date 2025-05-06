@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 8 — Словари в Python</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Урок 8: Словари в Python</h1>
+    </header>
+
+    <section>
+        <h2>Что такое словари?</h2>
+        <p>Словарь в Python — это коллекция пар "ключ-значение". Каждый ключ уникален, а значение может быть любым объектом.</p>
+        <pre><code>my_dict = {"name": "Анна", "age": 20, "is_student": True}</code></pre>
+
+        <h2>Основные операции со словарями:</h2>
+        <ul>
+            <li><code>get()</code> — возвращает значение по ключу</li>
+            <li><code>keys()</code> — возвращает все ключи словаря</li>
+            <li><code>values()</code> — возвращает все значения словаря</li>
+            <li><code>update()</code> — обновляет или добавляет пару "ключ-значение"</li>
+        </ul>
+
+        <h3>Пример:</h3>
+        <pre><code>my_dict = {"name": "Анна", "age": 20}
+print(my_dict["name"])  # "Анна"</code></pre>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Python Course</p>
+
+
+<br>
+<nav>
+            <ul>
+                
+                <li><a href="page1.html">Главная</a></li>
+                <li><a href="page8.html">Урок 7</a></li>
+                <li><a href="page10.html">Урок 9</a></li>
+                
+            </ul>
+        </nav>
+    </header>

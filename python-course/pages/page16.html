@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 15 — Модули и пакеты в Python</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Урок 15: Модули и пакеты в Python</h1>
+    </header>
+
+    <section>
+        <h2>Что такое модули?</h2>
+        <p>Модуль — это файл, содержащий Python-код. Модули позволяют организовать код в удобную структуру и повторно использовать функции, классы и переменные.</p>
+        <pre><code># mymodule.py
+def greet(name):
+    print(f"Привет, {name}!")
+
+# main.py
+import mymodule
+mymodule.greet("Анна")</code></pre>
+
+        <h2>Что такое пакеты?</h2>
+        <p>Пакет — это директория, которая содержит несколько модулей и специальный файл <code>_init_.py</code>, который делает директорию пакетом.</p>
+        <pre><code># Структура пакета:
+# mypackage/
+#     _init_.py
+#     module1.py
+#     module2.py</code></pre>
+
+        <h3>Импортирование из пакетов:</h3>
+        <pre><code>from mypackage import module1
+module1.function_name()</code></pre>
+
+        <h2>Создание пакетов:</h2>
+        <p>Чтобы создать пакет, необходимо создать директорию с файлами модулей и добавить в неё файл <code>_init_.py</code>, который делает директорию пакетом.</p>
+        <pre><code># Пример структуры пакета:
+# mypackage/
+#     _init_.py
+#     module1.py
+#     module2.py</code></pre>
+
+        <h2>Установка внешних пакетов:</h2>
+        <p>Для установки сторонних пакетов используется <code>pip</code>. Например:</p>
+        <pre><code>pip install requests</code></pre>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Python Course</p>
+
+
+<br>
+<nav>
+            <ul>
+                
+                <li><a href="page1.html">Главная</a></li>
+                <li><a href="page15.html">Урок 14</a></li>
+                <li><a href="page17.html">Урок 16</a></li>
+            </ul>
+        </nav>
+    </header>

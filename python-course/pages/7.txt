@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 6 — Списки и методы списков</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Урок 6: Списки и методы списков</h1>
+    </header>
+
+    <section>
+        <h2>Что такое списки?</h2>
+        <p>Список в Python — это упорядоченная коллекция элементов, которая может содержать элементы разных типов.</p>
+        <pre><code>my_list = [1, 2, 3, "яблоко", True]</code></pre>
+
+        <h2>Основные методы списков:</h2>
+        <ul>
+            <li><code>append()</code> — добавляет элемент в конец списка</li>
+            <li><code>remove()</code> — удаляет первый встреченный элемент</li>
+            <li><code>pop()</code> — удаляет и возвращает элемент по индексу</li>
+            <li><code>sort()</code> — сортирует список</li>
+        </ul>
+
+        <h3>Пример:</h3>
+        <pre><code>my_list = [1, 2, 3]
+my_list.append(4)
+print(my_list)  # [1, 2, 3, 4]</code></pre>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Python Course</p>
+
+
+<br>
+<nav>
+            <ul>
+                
+                <li><a href="page1.html">Главная</a></li>
+                <li><a href="page6.html">Урок 5</a></li>
+                <li><a href="page8.html">Урок 7</a></li>
+                
+            </ul>
+        </nav>
+    </header>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 19 — Регулярные выражения</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Урок 19: Регулярные выражения в Python</h1>
+    </header>
+
+    <section>
+        <h2>Что такое регулярные выражения?</h2>
+        <p>Регулярные выражения (или regex) — это шаблоны для поиска и работы с текстом. В Python для работы с регулярными выражениями используется модуль <code>re</code>.</p>
+
+        <h2>Основные функции модуля <code>re</code>:</h2>
+        <ul>
+            <li><code>re.search()</code> — ищет первый шаблон в строке</li>
+            <li><code>re.match()</code> — ищет шаблон в начале строки</li>
+            <li><code>re.findall()</code> — находит все вхождения шаблона в строке</li>
+            <li><code>re.sub()</code> — заменяет все вхождения шаблона на другой текст</li>
+        </ul>
+
+        <h2>Пример поиска с <code>re.search()</code>:</h2>
+        <pre><code>import re
+text = "Привет, мой номер: 123-456-7890"
+match = re.search(r"\d{3}-\d{3}-\d{4}", text)
+if match:
+    print("Найдено:", match.group())  # 123-456-7890</code></pre>
+
+        <h2>Пример поиска всех вхождений с <code>re.findall()</code>:</h2>
+        <pre><code>import re
+text = "У меня есть два телефона: 123-456-7890 и 987-654-3210"
+matches = re.findall(r"\d{3}-\d{3}-\d{4}", text)
+print(matches)  # ['123-456-7890', '987-654-3210']</code></pre>
+
+        <h2>Замена с <code>re.sub()</code>:</h2>
+        <pre><code>import re
+text = "Мой старый номер 123-456-7890"
+new_text = re.sub(r"\d{3}-\d{3}-\d{4}", "XXX-XXX-XXXX", text)
+print(new_text)  # Мой старый номер XXX-XXX-XXXX</code></pre>
+
+        <h2>Шаблоны регулярных выражений:</h2>
+        <ul>
+            <li><code>\d</code> — любая цифра</li>
+            <li><code>\w</code> — любая буква, цифра или символ подчеркивания</li>
+            <li><code>\s</code> — пробел или символ новой строки</li>
+            <li><code>^</code> — начало строки</li>
+            <li><code>$</code> — конец строки</li>
+        </ul>
+
+        <h2>Пример использования специальных символов:</h2>
+        <pre><code>import re
+text = "Я люблю Python и C++"
+matches = re.findall(r"\b\w{6}\b", text)  # Находит все слова из 6 символов
+print(matches)  # ['Python']</code></pre>
+
+        <h2>Использование групп в регулярных выражениях:</h2>
+        <pre><code>import re
+text = "John: 555-1234, Sarah: 555-5678"
+matches = re.findall(r"(\w+): (\d{3}-\d{4})", text)
+for name, phone in matches:
+    print(f"Имя: {name}, Номер: {phone}")  # Имя: John, Номер: 555-1234
+</code></pre>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Python Course</p>
+
+
+<br>
+<nav>
+            <ul>
+                
+                <li><a href="page1.html">Главная</a></li>
+                <li><a href="page19.html">Урок 18</a></li>
+                <li><a href="page21.html">Урок 20</a></li>
+            </ul>
+        </nav>
+    </header>

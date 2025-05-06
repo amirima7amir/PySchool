@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 16 — Работа с датами и временем</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Урок 16: Работа с датами и временем в Python</h1>
+    </header>
+
+    <section>
+        <h2>Что такое модуль <code>datetime</code>?</h2>
+        <p>Модуль <code>datetime</code> в Python позволяет работать с датами и временем. Он предоставляет классы для манипуляций с датами, временем и интервалами между ними.</p>
+
+        <h2>Получение текущей даты и времени:</h2>
+        <pre><code>import datetime
+now = datetime.datetime.now()
+print(now)  # Например: 2025-04-28 14:32:01.123456</code></pre>
+
+        <h2>Создание объектов даты и времени:</h2>
+        <pre><code>birthday = datetime.datetime(1990, 5, 15)
+print(birthday)  # 1990-05-15 00:00:00</code></pre>
+
+        <h2>Форматирование дат и времени:</h2>
+        <p>Вы можете преобразовывать дату и время в строку с помощью метода <code>strftime()</code>:</p>
+        <pre><code>formatted = now.strftime("%d-%m-%Y %H:%M:%S")
+print(formatted)  # 28-04-2025 14:32:01</code></pre>
+
+        <h2>Парсинг строки в объект даты и времени:</h2>
+        <pre><code>date_str = "28-04-2025"
+date_obj = datetime.datetime.strptime(date_str, "%d-%m-%Y")
+print(date_obj)  # 2025-04-28 00:00:00</code></pre>
+
+        <h2>Вычисления с датами и временем:</h2>
+        <p>Для вычислений с датами можно использовать операторы, например, вычесть одну дату из другой, чтобы получить разницу:</p>
+        <pre><code>today = datetime.datetime.now()
+one_day = datetime.timedelta(days=1)
+tomorrow = today + one_day
+print(tomorrow)  # Например: 2025-04-29 14:32:01.123456</code></pre>
+
+        <h2>Работа с временными интервалами:</h2>
+        <pre><code>from datetime import timedelta
+delta = timedelta(days=5)
+print(delta)  # 5 days, 0:00:00</code></pre>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Python Course</p>
+
+
+<br>
+<nav>
+            <ul>
+                
+                <li><a href="page1.html">Главная</a></li>
+                <li><a href="page16.html">Урок 15</a></li>
+                <li><a href="page18.html">Урок 17</a></li>
+            </ul>
+        </nav>
+    </header>
